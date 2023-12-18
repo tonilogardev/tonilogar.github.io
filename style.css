@@ -1,0 +1,53 @@
+.header{ 
+    text-align: center;
+
+}
+
+.title, .h1_Header{
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    margin-bottom: 1.5px;
+    }
+
+
+    
+
+.indice, ul, li, a, article, .h1_Article{
+    list-style:none;
+    text-align: left;
+    padding-inline-start: 10px;
+    font-size: 11px;
+    margin-bottom: 1.5px;
+    text-decoration:none;
+}
+
+html {font: "times new roman"}
+ b {
+    display: inline-flexbox;
+    text-align: right;
+ }
+ #indice {
+    width: 500px;
+ }
+ .page-number {
+    float: right;
+    margin-right: 80px; /* Ajusta la distancia del margen derecho según necesites */
+}
+
+
+.image_01 {
+    width: 60%;
+    margin: 5px;
+}
+.image_02 {
+    width: 60%;
+    margin: 5px;
+}
+.linksTitle {
+    display: block;
+}
+.links {
+    display: block;
+    color: aqua;
+}
