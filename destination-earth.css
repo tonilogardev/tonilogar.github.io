@@ -1,0 +1,98 @@
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #495057;
+    --color-background: #ced5db;
+    --color-text: #343a40;
+    --color-highlight: #f56a00;
+    --font-family-sans-serif: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family-header: 'Georgia', Times, 'Times New Roman', serif;
+    --indent-main: 20px;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Títulos y Textos */
+h1, .h1_Header {
+    font-family: var(--font-family-header);
+    font-size: 2em;
+    color: var(--color-secondary);
+}
+
+h2 {
+    font-family: var(--font-family-header);
+    font-size: 1.75em;
+    color: var(--color-secondary);
+    padding-left: var(--indent-main);
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-left: calc(2 * var(--indent-main));
+}
+
+h4 {
+    font-size: 1.25em;
+    padding-left: calc(3 * var(--indent-main));
+}
+
+/* Indice */
+.indice, .h1_Article {
+    font-family: var(--font-family-header);
+    padding-left: var(--indent-main);
+    margin-top: 10px;
+}
+
+#indice {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+#indice ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#indice ul li {
+    padding: 5px 20px;
+}
+
+#indice ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#indice ul li a:hover {
+    background-color: var(--color-highlight);
+    border-radius: 5px;
+}
+
+.article {
+    padding-left: var(--indent-main);
+    padding-right: var(--indent-main);
+    text-align: justify;
+}
+
+/* Pie de página y otros estilos si son necesarios */
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
