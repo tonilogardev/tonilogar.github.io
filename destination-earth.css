@@ -96,3 +96,47 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* ...resto del CSS anterior... */
+
+#indice ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#indice ul li {
+    position: relative; /* Para posicionar absolutamente los números de página */
+    padding-left: 20px; /* Espacio para el texto del índice */
+    margin-bottom: 10px;
+}
+
+#indice ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent; /* Elimina el fondo para los enlaces */
+    padding: 5px 0; /* Padding para los enlaces, ajusta como necesites */
+}
+
+.page-number {
+    position: absolute; /* Posiciona absolutamente dentro de su contenedor LI */
+    right: 10px; /* Alinea a la derecha, con un poco de margen */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrar */
+}
+
+/* Estilo para pantallas más pequeñas (Mobile-first) */
+@media (max-width: 768px) {
+    /* Ajustes para índice responsivo */
+    #indice ul li {
+        padding-left: 10px; /* Menos espacio a la izquierda para textos más largos */
+    }
+
+    #indice ul li a {
+        padding: 5px 0; /* Ajuste para el padding en dispositivos móviles */
+    }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 769px) {
+    /* Estilos adicionales para escritorio si son necesarios */
+}
