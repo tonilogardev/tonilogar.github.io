@@ -1,13 +1,12 @@
 window.addEventListener('scroll', () => {
-    let sections = document.querySelectorAll('article');
-    let navLinks = document.querySelectorAll('#indice ul li a');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
 
     let current = '';
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= (sectionTop - sectionHeight / 3)) {
+        if (pageYOffset >= sectionTop - section.clientHeight / 3) {
             current = section.getAttribute('id');
         }
     });
