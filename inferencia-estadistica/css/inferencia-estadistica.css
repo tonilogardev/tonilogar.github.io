@@ -1,0 +1,142 @@
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #495057;
+    --color-background: #ced5db;
+    --color-text: #343a40;
+    --color-highlight: #f56a00;
+    --font-family-sans-serif: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family-header: 'Georgia', Times, 'Times New Roman', serif;
+    --indent-main: 20px;
+}
+
+body {
+    font-family: var(--font-family-sans-serif);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Títulos y Textos */
+h1, .h1_Header {
+    font-family: var(--font-family-header);
+    font-size: 2em;
+    color: var(--color-secondary);
+}
+
+h2 {
+    font-family: var(--font-family-header);
+    font-size: 1.75em;
+    color: var(--color-secondary);
+    padding-left: var(--indent-main);
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-left: calc(2 * var(--indent-main));
+}
+
+h4 {
+    font-size: 1.25em;
+    padding-left: calc(3 * var(--indent-main));
+}
+
+/* Indice */
+.indice, .h1_Article {
+    font-family: var(--font-family-header);
+    padding-left: var(--indent-main);
+    margin-top: 10px;
+}
+
+#indice {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+#indice ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#indice ul li {
+    padding: 5px 20px;
+}
+
+#indice ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#indice ul li a:hover {
+    background-color: var(--color-highlight);
+    border-radius: 5px;
+}
+
+.article {
+    padding-left: var(--indent-main);
+    padding-right: var(--indent-main);
+    text-align: justify;
+}
+
+/* Pie de página y otros estilos si son necesarios */
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* ...resto del CSS anterior... */
+
+#indice ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#indice ul li {
+    position: relative; /* Para posicionar absolutamente los números de página */
+    padding-left: 20px; /* Espacio para el texto del índice */
+    margin-bottom: 10px;
+}
+
+#indice ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent; /* Elimina el fondo para los enlaces */
+    padding: 5px 0; /* Padding para los enlaces, ajusta como necesites */
+}
+
+.page-number {
+    position: absolute; /* Posiciona absolutamente dentro de su contenedor LI */
+    right: 10px; /* Alinea a la derecha, con un poco de margen */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrar */
+}
+
+/* Estilo para pantallas más pequeñas (Mobile-first) */
+@media (max-width: 768px) {
+    /* Ajustes para índice responsivo */
+    #indice ul li {
+        padding-left: 10px; /* Menos espacio a la izquierda para textos más largos */
+    }
+
+    #indice ul li a {
+        padding: 5px 0; /* Ajuste para el padding en dispositivos móviles */
+    }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 769px) {
+    /* Estilos adicionales para escritorio si son necesarios */
+}
