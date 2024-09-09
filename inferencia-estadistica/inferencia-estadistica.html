@@ -8,10 +8,9 @@
 </head>
 
 <body>
-    
+    <img class="front-page" src="img/image_01.jpg" alt="img_01" >
 
     <!-- Índice -->
-    <h1 class="indice">Íncidencia estadistica series temporales</h1>
     <div id="indice">
         <ul>
             <li><a href="#fumar-insomnio">Problema 1.1 - Fumar e Insomnio</a></li>
@@ -30,19 +29,59 @@
     <article class="article">
         <section id="fumar-insomnio">
             <h2>Problema 1.1 - Fumar e Insomnio</h2>
-            <p>P.1.1. Queremos determinar si hay relación entre el hábito de fumar (A) y el hecho de
+            <p>
+                <strong>
+                P.1.1. Queremos determinar si hay relación entre el hábito de fumar (A) y el hecho de
                 sufrir trastorno en el sueño (B) en una muestra de 150 personas. Con los siguientes
                 datos que mostramos en la tabla de contingencia:
-                </p>
-                <img src="" alt="">
-                <p>
-                    Establece si existe relación entre A y B.
-                    Para determinar si existe relación entre el hábito de fumar y el hecho de sufrir trastorno en el sueño utilizaremos prueba de chi-cuadrado para la independencia.
-                    </p>
+                </strong>
+            </p>
+            <p>
+                <strong>
+                Establece si existe relación entre A y B.
+                Para determinar si existe relación entre el hábito de fumar y el hecho de sufrir trastorno en el sueño utilizaremos prueba de chi-cuadrado para la independencia.
+                </strong>
+            </p>
+            <a href="https://docs.google.com/spreadsheets/d/16hWwPOPFve8Zsmt8oKXIoWE0fWrvZRRQ/edit?gid=1324954301#gid=1324954301" target="_blank">Ejercicio en google drive</a>
+            <p>A=Fumar B=Insomnio</p>
+            <div class="espacio">   </div>
+            <p>H0:A y B son independientes</p>
+            <p>H1:A y B no son independientes</p>
+            <img class="test-1-1-image-02" src="img/test-1-1-image-02.jpg" alt="">
+            <p>Cálculo X<sup>2</sup> = 8,744 </p>
+            <p>Grados de libertad 2  = (3 filas - 1) * (2 columnas -1)</p>
+            <p>X<sup>2</sup> Tablas = 5,991 </p>
+            <p>Al ser X<sup>2</sup> (8.744) mayor que el valor crítico calculado con las tablas (5.991), rechazamos la hipótesis nula H0.
 
+                Lo que valida la hipótesis alternativa H1 por lo cual existe relación entre (A) el hábito de fumar y (B) el trastorno en el sueño.</p>
+        </section>
         <section id="depresion-ansiedad">
             <h2>Problema 1.2 - Depresión y Ansiedad</h2>
-            <p>Contenido del problema sobre depresión y ansiedad...</p>
+            <p>
+                <strong>
+                1.2 Un psicólogo desea conocer la relación entre el síntoma depresivos (A) y el síntoma
+                ansiedad (B). Para ello dispone de una muestra de 100 historiales clínicos que
+                mostramos en la siguiente tabla:
+                </strong>
+            </p>
+            <p>
+                <strong>
+                    Nos preguntamos: ¿Estos dos síntomas son independientes? Consideramos el nivel de
+                    significación 0,02.
+                </strong>
+            </p>
+            <a href="https://docs.google.com/spreadsheets/d/17XYlmHq5eYqI2SYINn7-hJlilDhR_ae8/edit?usp=sharing&ouid=109041370115186845551&rtpof=true&sd=true" target="_blank" >Ejercicio en google drive</a>
+            <p>A=Síntoma ansiedad B=Síntoma depresivo</p>
+            <div class="espacio">   </div>
+            <p>H0:A y B son independientes</p>
+            <p>H1:A y B no son independientes</p>
+            <img class="test-1-1-image-02" src="img/test-1-2-image-01.jpg" alt="">
+            <p>Cálculo X<sup>2</sup> = 5,823</p>
+            <p>Grados de libertad 1   = (2 filas - 1) * (2 columnas -1) </p>
+            <p>X<sup>2</sup> Tablas = 5,412  (nivel de significancia 0,02)</p>
+            <p>Al ser X<sup>2</sup> (5.823) mayor que el valor crítico calculado con las tablas (5.412), rechazamos la hipótesis nula H0.
+
+                Lo que valida la hipótesis alternativa H1 por lo cual existe relación entre (A) la depresión y (B) la ansiedad, no son independientes.</p>
         </section>
 
         <section id="var1">
