@@ -17,7 +17,27 @@ body {
     padding: 0;
     margin: 0;
 }
-
+.front-page {
+    width: 100%; 
+}
+ p {
+    margin: 0;
+ }
+.test-1-1-image-01 {
+    width: 50%;
+}
+img {
+    margin: 10px;
+    margin-left: 0px;
+    min-width: 300px;
+    min-height: 300px;
+}
+.espacio {
+    padding: 10px;
+}
+.test-1-1-image-02 {
+    width: 50%;
+}
 header {
     background-color: var(--color-primary);
     color: white;
