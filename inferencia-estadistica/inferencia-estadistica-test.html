@@ -99,7 +99,8 @@
       <h2>Problema 2.1-Var1</h2>
       <p>
         <strong>
-          Elaboración de un informe en el que se interprete la prueba de bondad de ajuste a la normalidad, de los
+          Elaboración de un <strong>informe</strong> en el que se interprete la prueba de bondad de ajuste a la
+          normalidad, de los
           siguientes gráficos:
         </strong>
       </p>
@@ -113,12 +114,10 @@
         <strong>La variable 1 no sigue una distribución normal.</strong> Llegamos a la conclusión al ser p-value
         (0.01274) < 0.05, por lo que rechazamos H<sub>0</sub>.
           Aún con la conclusión anterior, se interpreta con el resultado del estadístico de contraste W (0.93938) tan
-          cerca de 1,
-          que existe un ajuste alto y no están extremadamente alejados a la normalidad.
+          cerca de 1, que existe un ajuste alto y no están extremadamente alejados a la normalidad.
           El gráfico de densidad no es en campana ni simétrico por un conjunto de datos en su distribución central, el
           histograma muestra en barras de manera muy similar esto comentado, y en el gráfico Q-Q tiene puntos desviados
-          de
-          la línea al igual que en el de cuantilas.
+          de la línea al igual que en el de cuantilas.
       </p>
     </section>
 
@@ -139,11 +138,13 @@
       <p class="espacio"> </p>
       <p class="p-test-2">
         <strong>La variable 2 no sigue una distribución normal.</strong> Llegamos a esta conclusión al ser p-value
-        (0.04965) < 0.05, por lo que rechazamos H0. Conclusión muy ajustada, que analizando el estadístico de contraste
+        (0.04965) < 0.05, por lo que rechazamos H<sub>0</sub>. Conclusión muy ajustada, que analizando el estadístico de
+          contraste
           W (0.95394) tan cerca de 1 indica un ajuste alto. La distribución no es normal pero estando muy cerca de esta
           y con ajuste alto. En los gráficos también se observa que está muy cerca de serlo, los gráficos de densidad
           suavizada e histograma dibujan casi una campana y una distribución de datos cercana a esta, y en los gráficos
-          QQ y cuantilas los puntos están cerca de la línea. </p>
+          QQ y cuantilas los puntos están cerca de la línea.
+      </p>
     </section>
 
     <section id="relacion-genero-edad">
@@ -232,14 +233,22 @@
             ◦ t = 0.50369, grados de libertad df = 46.994, p = 0.6168 <br>
             ◦ Intervalo de confianza: [-245.4330, 409.3803] <br>
             ◦ Medias estimadas: Grupo F (2133.665), Grupo M (2051.691)
+            Decisión para t de Welch: Dado que el p-valor es mayor que 0.05, no se rechaza la hipótesis nula. No hay
+            diferencia significativa en las medias de sueldo entre los géneros.
           </p>
           <p><strong>Decisión estadística:</strong></p>
           <p>
-            Dado que el p-valor es mayor que 0.05, no se rechaza la hipótesis nula. No hay diferencia significativa en
-            las medias de sueldo entre los géneros.
+            Dado que los datos cumplen con la normalidad, utilizamos el t-test de Welch.
+            El p-valor de la prueba es 0.6168 (mayor que 0.05), por lo que no se rechaza la
+            hipótesis nula de igualdad de medias entre los géneros.
           </p>
           <p><strong>Conclusión:</strong></p>
-          <p>No existe relación entre las dos variables sueldo y género.</p>
+          <p>No hay evidencia suficiente para afirmar que existe una diferencia significativa
+            en el sueldo entre los géneros en esta muestra. Las pruebas de normalidad y
+            la prueba t de Welch confirman que las medias de sueldo entre los géneros no
+            son significativamente diferentes.<strong>No existe relación entre las dos variables sueldo y
+              género.</strong>
+          </p>
         </div>
       </div>
     </section>
@@ -269,6 +278,10 @@
             ◦ Para posición baja: W = 0.92651, p = 0.2725 <br>
             ◦ Para posición media: W = 0.88285, p = 0.07794
           </p>
+          <p>Decisión para la normalidad: Todos los p-valores son mayores que 0.05, 
+            por lo que no se rechaza la hipótesis nula de normalidad. Los datos de 
+            sueldo siguen una distribución normal para cada posición, por lo que 
+            podemos usar ANOVA.</p>
         </div>
 
         <div class="columna derecha">
@@ -278,14 +291,22 @@
             ◦ Grados de libertad: df1 = 2 (posiciones), df2 = 47 (residual) <br>
             ◦ Medias estimadas: Posición alta (2525.104), Posición baja (1374.008), Posición media (2101.569)
           </p>
+          <p>Decisión para ANOVA: Dado que el p-valor es extremadamente bajo (menor 
+            que 0.05), se rechaza la hipótesis nula. Hay diferencias significativas entre los 
+            sueldos según la posición en la empresa.</p>
           <p><strong>Decisión estadística:</strong></p>
           <p>
-            Dado que el p-valor es extremadamente bajo, se rechaza la hipótesis nula. Hay diferencias significativas
-            entre los sueldos según la posición en la empresa.
+            Dado que las pruebas de normalidad permiten el uso de ANOVA y el p-valor 
+            de ANOVA es extremadamente bajo, se rechaza la hipótesis nula de igualdad 
+            de sueldos entre las posiciones. 
           </p>
           <p><strong>Conclusión:</strong></p>
-          <p>Hay evidencia suficiente para afirmar que existen diferencias significativas en los sueldos según la
-            posición ocupada en la empresa.</p>
+          <p><strong>Hay evidencia suficiente para afirmar que existen diferencias significativas en los sueldos según la
+            posición ocupada en la empresa.</strong>La posición más 
+            alta tiene el sueldo más elevado, seguida de la posición media y, finalmente, 
+            la posición baja. Las comparaciones post-hoc muestran que todas las 
+            diferencias entre las posiciones son estadísticamente significativas.
+            </p>
         </div>
       </div>
     </section>
@@ -315,6 +336,9 @@
             ◦ Para posición baja: W = 0.98533, p = 0.9949 <br>
             ◦ Para posición media: W = 0.93332, p = 0.3764
           </p>
+          <p>Decisión para la normalidad: Todos los p-valores son mayores que 0.05, por lo que no 
+            se rechaza la hipótesis nula de normalidad. Los datos de edad siguen una distribución 
+            normal para cada posición, por lo que podemos usar ANOVA.</p>
         </div>
 
         <div class="columna derecha">
@@ -324,12 +348,20 @@
             ◦ Grados de libertad: df1 = 2 (posiciones), df2 = 47 (residual) <br>
             ◦ Medias estimadas: Posición alta (39.45120), Posición baja (40.77145), Posición media (44.82915)
           </p>
+          <p>Decisión para ANOVA: Dado que el p-valor es mayor que 0.05, no se rechaza la hipótesis 
+            nula. No hay diferencias significativas en las medias de edad según la posición.
+            </p>
           <p><strong>Decisión estadística:</strong></p>
-          <p>No se rechaza la hipótesis nula. No hay diferencias significativas en las medias de edad según la posición.
+          <p>Dado que las pruebas de normalidad permiten el uso de ANOVA y el p-valor de ANOVA 
+            es mayor que 0.05, no se rechaza la hipótesis nula de igualdad de edades entre las 
+            posiciones.
           </p>
           <p><strong>Conclusión:</strong></p>
-          <p>No hay evidencia suficiente para afirmar que existen diferencias significativas en la edad según la
-            posición ocupada en la empresa.</p>
+          <p><strong>No hay evidencia suficiente para afirmar que existen diferencias significativas en la edad según la
+            posición ocupada en la empresa.</strong>Las pruebas de normalidad y la prueba 
+            ANOVA confirman que las medias de edad entre las posiciones no son 
+            significativamente diferentes.
+            </p>
         </div>
       </div>
     </section>
@@ -358,15 +390,33 @@
             ◦ Género Femenino (F): Alta = 14, Baja = 5, Media = 6 <br>
             ◦ Género Masculino (M): Alta = 9, Baja = 9, Media = 7
           </p>
+
+          <p><strong>Frecuencias  esperadas:</strong></p>
+          <p>
+            ◦ Género Femenino (F): Alta = 11.5, Baja = 7, Media = 6.5 <br>
+            ◦ Género Masculino (M): Alta = 11.5, Baja = 7, Media = 6.5
+          </p>
+
+          <p><strong>Componentes Chi-cuadrado:</strong></p>
+          <p>
+            ◦ Para F: 0.54 (Alta), 0.57 (Baja), 0.04 (Media) <br>
+            ◦ Para M: 0.54 (Alta), 0.57 (Baja), 0.04 (Media)
+          </p>
         </div>
 
         <div class="columna derecha">
           <p><strong>Decisión estadística:</strong></p>
-          <p>No se rechaza la hipótesis nula de independencia. No hay relación significativa entre el género y la
-            posición en la empresa.</p>
+          <p>Dado que el p-valor de 0.3156 es mayor que el nivel de significación típico 
+            de 0.05, no se rechaza la hipótesis nula. Esto indica que no hay evidencia 
+            suficiente para afirmar que existe una relación significativa entre el 
+            género y la posición en la empresa.
+            </p>
           <p><strong>Conclusión:</strong></p>
-          <p>No se encontró evidencia suficiente para concluir que el género de las personas está relacionado con la
-            posición que ocupan en la empresa.</p>
+          <p><strong>No se encontró evidencia suficiente para concluir que el género de las personas está relacionado con la
+            posición que ocupan en la empresa.</strong>Según la prueba de Chi-cuadrado, las diferencias observadas entre 
+            géneros y posiciones pueden atribuirse al azar, y no hay una dependencia 
+            significativa entre estas dos variables.
+            </p>
         </div>
       </div>
     </section>

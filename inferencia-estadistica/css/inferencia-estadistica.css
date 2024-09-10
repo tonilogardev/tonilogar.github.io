@@ -1,236 +1,115 @@
-:root {
-    --color-primary: #007bff;
-    --color-secondary: #495057;
-    --color-background: #ced5db;
-    --color-text: #343a40;
-    --color-highlight: #f56a00;
-    --font-family-sans-serif: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-family-header: 'Georgia', Times, 'Times New Roman', serif;
-    --indent-main: 20px;
-}
-
+/* Estilos generales */
 body {
-    font-family: var(--font-family-sans-serif);
-    color: var(--color-text);
-    background-color: var(--color-background);
-    line-height: 1.6;
-    padding: 0;
-    margin: 0;
-}
-
-.front-page {
-    width: 100%; 
-}
-
-.link {
-    text-decoration: underline; 
-}
-
-p {
-    margin: 0;
-}
-
-.test-1-1-image-01 {
-    width: 40%;
-}
-
-img {
-    margin: 10px;
-    margin-left: 0px;
-    min-width: 300px;
-    min-height: 300px;
-}
-
-.espacio {
-    padding: 10px;
-}
-
-.test-1-1-image-02 {
-    width: 40%;
-}
-
-.div-test-2 {
-    display: flex;
-    align-items: flex-start; /* Alinea los elementos al inicio */
-}
-
-.img-test-2 {
-    width: 40%;
-    margin-right: 15px; /* Añadir espacio entre la imagen y el texto */
-}
-
-.p-test-2 {
-    flex-direction: column; /* Para asegurarse de que los párrafos se apilen verticalmente */
-    text-align: justify;
-}
-
-header {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Secciones específicas */
-#relacion-genero-edad,
-#relacion-genero-sueldo,
-#relacion-sueldo-posicion,
-#relacion-edad-posicion,
-#relacion-genero-posicion {
-    margin: 20px;
     font-family: Arial, sans-serif;
-    color: #343a40;
-}
-
-h2 {
-    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .test-1-1-image-02, test-1-1-image-02 {
+    width: 32%;
+    min-width: 300px;
+  }
+  h1, h2 {
+    color: #004080;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin: 15px 0;
+  }
+  
+  a {
     color: #007bff;
-    margin-bottom: 10px;
-    padding-left: 0px !important;
-}
-
-.contenedor {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-/* Estilos para las dos columnas */
-.columna {
-    width: 48%;
-}
-
-.izquierda p, .derecha p {
-    margin-bottom: 15px;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-strong {
-    color: #343a40;
-}
-
-/* Títulos y Textos */
-h1, .h1_Header {
-    font-family: var(--font-family-header);
-    font-size: 2em;
-    color: var(--color-secondary);
-}
-
-h2 {
-    font-family: var(--font-family-header);
-    font-size: 1.75em;
-    color: var(--color-secondary);
-    padding-left: var(--indent-main);
-}
-
-h3 {
-    font-size: 1.5em;
-    padding-left: calc(2 * var(--indent-main));
-}
-
-h4 {
-    font-size: 1.25em;
-    padding-left: calc(3 * var(--indent-main));
-}
-
-/* Indice */
-.indice, .h1_Article {
-    font-family: var(--font-family-header);
-    padding-left: var(--indent-main);
-    margin-top: 10px;
-}
-
-#indice {
-    background-color: var(--color-secondary);
-    color: white;
-}
-
-#indice ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#indice ul li {
-    padding: 5px 20px;
-}
-
-#indice ul li a {
-    color: white;
     text-decoration: none;
-}
-
-#indice ul li a:hover {
-    background-color: var(--color-highlight);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para la portada */
+  .front-page {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Índice */
+  #indice {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+  }
+  
+  #indice ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #indice li {
+    margin: 10px 0;
+  }
+  
+  #indice a {
+    color: white;
+  }
+  
+  #indice a:hover {
+    color: #ddd;
+  }
+  
+  /* Estilos para los artículos */
+  .article {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
     border-radius: 5px;
-}
-
-.article {
-    padding-left: var(--indent-main);
-    padding-right: var(--indent-main);
-    text-align: justify;
-}
-
-/* Pie de página y otros estilos si son necesarios */
-footer {
-    background-color: var(--color-primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .article p {
+    margin: 10px 0;
+  }
+  
+  .article strong {
+    color: #004080;
+  }
+  
+  /* Estilos para imágenes dentro de las secciones */
+  .article img {
+    display: block;
+    margin: 15px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Espacios adicionales */
+  .espacio {
+    margin: 20px 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-#indice ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#indice ul li {
-    position: relative; /* Para posicionar absolutamente los números de página */
-    padding-left: 20px; /* Espacio para el texto del índice */
-    margin-bottom: 10px;
-}
-
-#indice ul li a {
-    text-decoration: none;
-    color: white;
-    background-color: transparent; /* Elimina el fondo para los enlaces */
-    padding: 5px 0; /* Padding para los enlaces, ajusta como necesites */
-}
-
-.page-number {
-    position: absolute; /* Posiciona absolutamente dentro de su contenedor LI */
-    right: 10px; /* Alinea a la derecha, con un poco de margen */
-    top: 50%; /* Centra verticalmente */
-    transform: translateY(-50%); /* Ajuste fino para centrar */
-}
-
-/* Estilo para pantallas más pequeñas (Mobile-first) */
-@media (max-width: 768px) {
-    /* Ajustes para índice responsivo */
-    #indice ul li {
-        padding-left: 10px; /* Menos espacio a la izquierda para textos más largos */
-    }
-
-    #indice ul li a {
-        padding: 5px 0; /* Ajuste para el padding en dispositivos móviles */
-    }
-
-    /* Ajuste para las secciones de contenido en móviles */
-    .contenedor {
-        flex-direction: column;
-    }
-
-    .columna {
-        width: 100%;
-    }
-}
-
-/* Estilos para pantallas más grandes */
-@media (min-width: 769px) {
-    /* Estilos adicionales para escritorio si son necesarios */
-}
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  footer img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+  }
+  
